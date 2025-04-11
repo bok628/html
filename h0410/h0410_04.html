@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{padding : 0; margin : 0 auto;}
+    table{margin : 50 auto; text-align : center; border-top : 1px solid black; border-collapse : collapse;}
+    th,td{ border-bottom : 1px solid #ddd; }
+    th{background-color : #f7f7f7; height : 47px; font-size : 18px; font-weight : 700; color : #000;}
+    td{height : 40px; font-size : 16px; color : #666; }
+    .t2{border-left : 1px solid #ddd;}
+    .t3{border-left : 1px solid #ddd; border-right : 1px solid #ddd;}
+    .t32{ color : #00478B; font-weight : 700; border-left : 1px solid #ddd;}
+</style>
+<body>
+    <table>
+        <colgroup>
+            <col width = 190px;>
+            <col width = 190px;>
+            <col width = 410px;>
+        </colgroup>
+        <tr>
+            <th>구분</th>
+            <th class = "t2">등급</th>
+            <th class = "t3">종합등급</th>
+        </tr>
+        <tr>
+            <td>환경</td>
+            <td class = "t2">A</td>
+            <td rowspan = "3" class = "t32">B+</td>   <!-- rowspan = "병합할 셀의 크기" 셀병합 -->
+        </tr>
+        <tr>
+            <td>사회</td>
+            <td class = "t2">A+</td>
+        </tr>
+        <tr>
+            <td>지배구조</td>
+            <td class = "t2">B</td>
+
+    </table>
+    
+</body>
+</html>
